@@ -1,19 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// component
+// internal import
 import footerLogo from '../../assets/images/logo-green.png';
-
-// style
-import './Footer.scss';
 
 const Footer = () => {
   return (
-    <div class='footer'>
-      <div class='footer__logo'>
+    <div className='footer'>
+      <div className='footer__logo'>
         <img src={footerLogo} alt='Natours logo' />
       </div>
-      <ul class='footer__nav'>
+      <ul className='footer__nav'>
         <li>
           <Link to='/'>About us</Link>
         </li>
@@ -30,7 +27,9 @@ const Footer = () => {
           <Link to='/'>Contact</Link>
         </li>
       </ul>
-      <p class='footer__copyright'>&copy; by Natours. All rights reserved.</p>
+      <p className='footer__copyright'>
+        &copy; by Natours. All rights reserved.
+      </p>
     </div>
   );
 };
